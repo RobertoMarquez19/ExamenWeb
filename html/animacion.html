@@ -1,0 +1,244 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<style>
+    #texto {
+        font-family: 'Lobster';
+    }
+
+    #texto2 {
+        font-family: 'Lobster';
+    }
+</style>
+
+<body>
+    <header class="sticky-top bg-light">
+        <ul class="nav justify-content-center border-top border-bottom">
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="formulario.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active text-danger" href="#">Product</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  text-dark" href="api.html">API</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div class="container" id="contenedor">
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <img class="img-fluid" id="titulo" width="650px"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Coca-Cola_logo.svg/1920px-Coca-Cola_logo.svg.png"
+                        alt="">
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 id="texto">PRUEBA LO NUEVO</h1>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center ">
+                <div>
+                    <img id="imagen" class="img-fluid" width="200px"
+                        src="https://www.cocacolaespana.es/content/dam/one/es/es/products/coca-cola-zero-azucar-cherry.jpg"
+                        alt="">
+                </div>
+                <div>
+                    <img id="imagen" class="img-fluid" width="200px"
+                        src="https://www.cocacolaespana.es/content/dam/one/es/es/products/coca-cola-zero-azucar-limon.jpg"
+                        alt="">
+                </div>
+                <div class="text-center">
+                    <img class="img-fluid" id="imagenMedio" width="300px"
+                        src="https://www.pnglib.com/wp-content/uploads/2021/02/coca-cola-logo_6020cc7dd3041.png" alt="">
+                </div>
+                <div>
+                    <img id="imagen2" class="img-fluid" width="200px"
+                        src="https://www.cocacolaespana.es/content/dam/one/es/es/products/coca-cola-with-coffee-sin-azucares.jpg"
+                        alt="">
+                </div>
+                <div>
+                    <img id="imagen2" class="img-fluid" width="200px"
+                        src="https://www.cocacolaespana.es/content/dam/one/es/es/products/nuevos-productos/coca-cola-energy.jpg"
+                        alt="">
+                </div>
+            </div>
+            <br>
+            <div class="row justify-content-center text-center">
+                <h1 id="texto2">LA ALEGRIA DE COMPARTIR</h1>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let intro = gsap.timeline({
+            repeat: -1,
+            repeatDelay: 1,
+        });
+
+        intro.fromTo("#titulo", {
+            opacity: 0,
+            scale: 1.5,
+        }, {
+            delay: 0.5,
+            scale: 1,
+            opacity: 1,
+            duration: 1,
+            ease: 'circ',
+            x: 0,
+        });
+
+        intro.fromTo("#imagenMedio", {
+            opacity: 0,
+            scale: 1.5,
+            y: -75,
+        }, {
+            rotation: 360,
+            opacity: 1,
+            scale: 1,
+            ease: 'bounce',
+            duration: 2,
+            y: 0,
+        });
+
+        intro.fromTo("#texto", {
+            opacity: 0,
+        }, {
+            opacity: 1,
+        });
+
+        intro.to("#imagenMedio", {
+            rotation: 270,
+            duration: 1,
+        });
+
+        intro.fromTo("#imagen", {
+            opacity: 0,
+            x: -200,
+        }, {
+            duration: 2,
+            opacity: 1,
+            x: 0,
+        });
+
+        intro.to("#imagenMedio", {
+            rotation: 90,
+            duration: 1,
+        });
+
+        intro.fromTo("#imagen2", {
+            opacity: 0,
+        }, {
+            duration: 2,
+            opacity: 1,
+            x: 0,
+        });
+        intro.to("#imagenMedio", {
+            rotation: 360,
+            duration: 1,
+            ease: 'bounce',
+        });
+        intro.fromTo("#texto2", {
+            opacity: 0,
+            y: -100,
+        }, {
+            duration: 1,
+            opacity: 1,
+            y: 0,
+        });
+        intro.to("#imagen", {
+            delay: 1,
+            duration: 0.2,
+            opacity: 0,
+        });
+        intro.to("#imagen2", {
+            duration: 0.2,
+            opacity: 0,
+        });
+        intro.to("#titulo", {
+            opacity: 0,
+        });
+        intro.to("#texto", {
+            opacity: 0,
+            duration: 0.2,
+        });
+        intro.to("#texto2", {
+            opacity: 0,
+            duration: 0.2,
+        });
+        intro.to("#imagenMedio", {
+            y: -100,
+            scale: 2.5,
+            duration: 1,
+        });
+        intro.to("#imagenMedio", {
+            duration: 1,
+            opacity: 0,
+        });
+    </script>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top te container-fluid" id="Acercade">
+        <div class=" row p-3 mb-2 text-light" style="background-color: rgba(173, 14, 14, 0.849);">
+            <div class="col-12 col-md">
+                <p class="">Katherine Yamileth Castillo Heredia 030919,<br>
+                    Roberto Otoniel Márquez Merche 044019, <br>
+                    Geovanny Roberto Martínez 034519</p>
+                <small class="d-block mb-3 text-light">&copy; 2020–2021</small>
+            </div>
+            <div class="col-12 col-md">
+                <h5>Coca-Cola</h5>
+                <ul class="list-unstyled text-small ">
+                    <!--agregar link de pagina en "href"-->
+                    <li class="mb-1 d-flex"><a class="link-secondary text-light" href="../index.html">Home / Inicio</a></li>
+                    <li class="mb-1"><a class="link-secondary text-light" href="about.html">About / Sobre Nosotros</a></li>
+                    <li class="mb-1"><a class="link-secondary text-light" href="formulario.html">Contact / Contacto</a></li>
+                    <li class="mb-1"><a class="link-secondary text-light" href="animacion.html">Product / Producto</a></li>
+                    <li class="mb-1"><a class="link-secondary text-light" href="api.html">API</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Siguenos en Redes Sociales</h5>
+                <a href="https://www.facebook.com/" target="black"><img src="../Imagenes/facebook2.png" class="ic"
+                        alt="facebook"></a>
+                <a href="https://www.instagram.com/" target="black"><img src="../Imagenes/instagram2.png" class="ic"
+                        alt="instagram"></a>
+                <a href="https://twitter.com/" target="black"><img src="../Imagenes/twitter2.png" class="ic"
+                        alt="twitter"></a>
+                <ul class="list-unstyled text-small">
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

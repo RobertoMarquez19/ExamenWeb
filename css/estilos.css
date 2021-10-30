@@ -1,0 +1,23 @@
+.fondo{
+    background-image: url(../Imagenes/portada2.jpg);
+    background-attachment: fixed;
+  }
+  
+  .fondo2
+  {
+    background-color: #FFFF;
+    opacity: 1;
+    border-radius: 25px;
+  }
+
+  .fondo3{
+    background-image: url(../Imagenes/ccme-header-desktop.jpg);
+    background-attachment: fixed;
+  }
+  
+  
+  .fondo5
+  {
+    background-color: #FFFF;
+    opacity: 0.80;
+  }

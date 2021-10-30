@@ -1,0 +1,138 @@
+#carrito {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  z-index: 1;
+  background-color: white;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 300px;
+}
+
+.bodyC {
+  background-color: #0B615E;
+}
+
+.colorf {
+  background-color: #086A87;
+}
+
+.navbar {
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+.ico {
+  width: 18px;
+  height: 18px;
+}
+
+.te {
+  font-size: 15px;
+  font-family: Georgia;
+}
+
+.tea {
+  font-size: 25px;
+  font-family: Georgia;
+}
+
+.btn-outline-success2:hover {
+  color: #fff;
+  background-color: #086A87;
+  border-color: #086A87;
+}
+
+.ic {
+  width: 30px;
+  height: 30px;
+}
+
+.iconi {
+  width: 50px;
+  height: 50px;
+}
+
+.titulo-categorias {
+  display: none;
+}
+
+.texto-categorias {
+  display: none;
+}
+
+.tz {
+  font-size: 12px;
+  font-family: Georgia;
+  position: absolute;
+}
+
+.cantidad {
+  width: 50px;
+}
+
+/* .tz:hover{
+  cursor: text;
+}
+
+.tz img:hover{
+  cursor: default;
+} */
+
+.visionMision {
+  font-family: Calibri;
+  color: #1B4F72;
+  font-size: 40px;
+  font-style: bold;
+}
+
+.texto {
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+.titulos {
+  font-family: Calibri;
+  color: #1B4F72;
+}
+
+#aboutFondo {
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://abartacocacola.com/wp-content/uploads/contact-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  height: clamp(10vh,50vw,50vh);
+}
+#aboutFondo2 {
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://abartacocacola.com/wp-content/uploads/request-services-banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0;
+  height: clamp(10vh,50vw,50vh);
+}
+.form-label, .form-number, .form-user, .form-password, .form-tel{
+  font-family: Acme;
+  margin-top:20px;
+}
+
+#fondoFormulario
+{
+  background-color: white;
+  border: solid red;
+  border-radius: 30px;
+}
+#apiFondo{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://wewotion.com/wp-content/uploads/2014/11/Coca-Cola-Music-Experience.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: clamp(10vh,50vw,50vh);
+}
+#homeFondo{
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(https://abartacocacola.com/wp-content/uploads/Careers-Banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: clamp(10vh,50vw,50vh);
+}
